@@ -110,4 +110,4 @@ Password: password
 
  🚀 Deployment Link (Mandatory)
 Live Project Link:  
-https://your-deployed-project-link.com
+https://2024kuec2044-mahesh.github.io/2044webD/
