@@ -105,7 +105,7 @@ Clean UI and modern styling
 
 If your project includes login functionality:
 
-Username / Email: admin@gmail.com
+Username / Email: admin@example.com
 Password: password
 
  🚀 Deployment Link (Mandatory)
