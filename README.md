@@ -1,6 +1,6 @@
 Web Development Final Project
 Project Title:
-M-Shop – Online E-Commerce Shopping Website
+E-Shop – Online E-Commerce Shopping Website
 👤 Student Information
 
 Name: Halavath Mahesh
@@ -9,12 +9,12 @@ Batch: C2
 
 📝 Project Description
 
-M-Shop is a fully functional E-Commerce website inspired by platforms like Flipkart and Amazon, designed to provide users with a seamless online shopping experience.
+E-Shop is a fully functional E-Commerce website inspired by platforms like Flipkart and Amazon, designed to provide users with a seamless online shopping experience.
 This project demonstrates the practical application of HTML, CSS, and JavaScript to develop a responsive, user-friendly, and visually appealing shopping website.
 
 ✔ Purpose of the Project
 
-The goal of M-Shop is to:
+The goal of E-Shop is to:
 
 Practice and implement core web development skills
 
@@ -24,7 +24,7 @@ Build interactive and dynamic web pages
 
 Understand functionalities used in e-commerce platforms
 
-⭐ Key Features of M-Shop
+⭐ Key Features of E-Shop
 🔹 1. Home Page
 
 Displays top categories like:
@@ -105,7 +105,7 @@ Clean UI and modern styling
 
 If your project includes login functionality:
 
-Username / Email: Admin
+Username / Email: admin@gmail.com
 Password: password
 
  🚀 Deployment Link (Mandatory)
