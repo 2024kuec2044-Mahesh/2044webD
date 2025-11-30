@@ -18,12 +18,12 @@ function login(email, password) {
 
 function logout() {
     localStorage.removeItem('isLoggedIn');
-    window.location.href = 'login.html';
+    window.location.href = 'index.html';
 }
 
 function checkLoginStatus() {
     if (!isLoggedIn()) {
-        window.location.href = 'login.html';
+        window.location.href = 'index.html';
     }
 }
 
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (login(email, password)) {
                 if (errorMessage) errorMessage.textContent = '';
-                window.location.href = 'index.html';
+                window.location.href = 'eshop.html';
             } else {
                 if (errorMessage) {
                     errorMessage.textContent = 'Invalid email or password.';
@@ -51,3 +51,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
