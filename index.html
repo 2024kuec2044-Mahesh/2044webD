@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Shop - Your Ultimate E-Commerce Destination</title>
+    <meta name="description" content="Discover amazing products at E-Shop. Shop electronics, fashion, and more with easy login and cart functionality.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛒</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span>E-Shop</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#login">Login</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button id="login-btn" class="btn-secondary" aria-label="Login"><i class="fas fa-user"></i> Login</button>
+                    <button id="cart-btn" class="btn-secondary" aria-label="Cart"><i class="fas fa-shopping-cart"></i> Cart <span id="cart-count">0</span></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to E-Shop</h1>
+                <p>Discover the best products at unbeatable prices. Shop smart, live better.</p>
+                <a href="#products" class="btn-primary">Shop Now</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop" alt="E-commerce shopping scene" loading="lazy">
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>At E-Shop, we're passionate about bringing you high-quality products that enhance your lifestyle. From cutting-edge electronics to stylish fashion, we curate the best selections to make shopping effortless and enjoyable.</p>
+                <div class="stats">
+                    <div class="stat">
+                        <h3>10K+</h3>
+                        <p>Happy Customers</p>
+                    </div>
+                    <div class="stat">
+                        <h3>500+</h3>
+                        <p>Products</p>
+                    </div>
+                    <div class="stat">
+                        <h3>24/7</h3>
+                        <p>Support</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <div class="container">
+                <h2>Featured Products</h2>
+                <div class="product-grid">
+                    <div class="product-card" data-id="1">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop" alt="Wireless Headphones" loading="lazy">
+                        <h3>Wireless Headphones</h3>
+                        <p>Premium sound quality with noise cancellation.</p>
+                        <div class="price">$199.99</div>
+                        <button class="btn-primary add-to-cart" data-id="1" data-name="Wireless Headphones" data-price="199.99">Add to Cart</button>
+                    </div>
+                    <div class="product-card" data-id="2">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=300&fit=crop" alt="Smart Watch" loading="lazy">
+                        <h3>Smart Watch</h3>
+                        <p>Track your fitness and stay connected.</p>
+                        <div class="price">$299.99</div>
+                        <button class="btn-primary add-to-cart" data-id="2" data-name="Smart Watch" data-price="299.99">Add to Cart</button>
+                    </div>
+                    <div class="product-card" data-id="3">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=300&fit=crop" alt="Running Shoes" loading="lazy">
+                        <h3>Running Shoes</h3>
+                        <p>Comfortable and durable for all terrains.</p>
+                        <div class="price">$129.99</div>
+                        <button class="btn-primary add-to-cart" data-id="3" data-name="Running Shoes" data-price="129.99">Add to Cart</button>
+                    </div>
+                    <div class="product-card" data-id="4">
+                        <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=400&h=300&fit=crop" alt="Laptop" loading="lazy">
+                        <h3>Gaming Laptop</h3>
+                        <p>High-performance laptop for gaming and work.</p>
+                        <div class="price">$1499.99</div>
+                        <button class="btn-primary add-to-cart" data-id="4" data-name="Gaming Laptop" data-price="1499.99">Add to Cart</button>
+                    </div>
+                    <div class="product-card" data-id="5">
+                        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=300&fit=crop" alt="Coffee Maker" loading="lazy">
+                        <h3>Coffee Maker</h3>
+                        <p>Brew perfect coffee every morning.</p>
+                        <div class="price">$89.99</div>
+                        <button class="btn-primary add-to-cart" data-id="5" data-name="Coffee Maker" data-price="89.99">Add to Cart</button>
+                    </div>
+                    <div class="product-card" data-id="6">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop" alt="Bluetooth Speaker" loading="lazy">
+                        <h3>Bluetooth Speaker</h3>
+                        <p>Portable speaker with amazing sound.</p>
+                        <div class="price">$79.99</div>
+                        <button class="btn-primary add-to-cart" data-id="6" data-name="Bluetooth Speaker" data-price="79.99">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="login" class="login-section">
+            <div class="container">
+                <div class="login-container">
+                    <div class="login-form">
+                        <div class="logo">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span>E-Shop</span>
+                        </div>
+                        <h2>Login to Your Account</h2>
+                        <form id="login-form">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" required>
+                            </div>
+                            <button type="submit" class="btn-primary">Login</button>
+                        </form>
+                        <p id="error-message" class="error-message"></p>
+                        <p>Demo credentials: admin@example.com / password</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <h2>What Our Customers Say</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial">
+                        <p>"Amazing products and fast shipping. Highly recommend!"</p>
+                        <cite>- Sarah Johnson</cite>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Great customer service and quality items. Will shop again."</p>
+                        <cite>- Mike Chen</cite>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Love the variety and easy checkout process."</p>
+                        <cite>- Emily Davis</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Have questions? Get in touch with our team.</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>support@eshop.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Commerce St, City, State 12345</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 E-Shop. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="login-close">&times;</span>
+            <div class="login-form">
+                <div class="logo">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span>E-Shop</span>
+                </div>
+                <h2>Login to Your Account</h2>
+                <form id="modal-login-form">
+                    <div class="form-group">
+                        <label for="modal-email">Email</label>
+                        <input type="email" id="modal-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-password">Password</label>
+                        <input type="password" id="modal-password" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Login</button>
+                </form>
+                <p id="modal-error-message" class="error-message"></p>
+                <p>Demo credentials: admin@example.com / password</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content cart-content">
+            <span class="close" id="cart-close">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">
+                <strong>Total: $<span id="cart-total">0.00</span></strong>
+            </div>
+            <button class="btn-primary" id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+    <script src="modal.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
