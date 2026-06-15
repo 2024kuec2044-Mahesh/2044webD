@@ -1,13 +1,17 @@
 Web Development Final Project
 Project Title:
 E-Shop – Online E-Commerce Shopping Website
-👤 Student Information
+
+Student Information
 
 Name: Halavath Mahesh
+
 College ID: 2024KUEC2044
+
 Batch: C2
 
-📝 Project Description
+
+Project Description
 
 E-Shop is a fully functional E-Commerce website inspired by platforms like Flipkart and Amazon, designed to provide users with a seamless online shopping experience.
 This project demonstrates the practical application of HTML, CSS, and JavaScript to develop a responsive, user-friendly, and visually appealing shopping website.
